@@ -9,10 +9,11 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: `blog`, 
-        path: `${__dirname}/blog`,
+        name: `post`, 
+        path: `${__dirname}/post`,
       }
     },
     "gatsby-plugin-mdx",
+    "gatsby-transformer-sharp",
   ],
 };
