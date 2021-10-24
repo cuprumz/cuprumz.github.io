@@ -13,6 +13,20 @@ module.exports = {
         path: `${__dirname}/post`,
       }
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/static`,
+        name: 'assets'
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/static/images`,
+        name: 'images'
+      }
+    },
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
   ],

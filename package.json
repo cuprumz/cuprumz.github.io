@@ -1,12 +1,14 @@
 {
   "name": "cuprumz.github.io",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "private": true,
   "description": "cuprumz.github.io",
   "author": "cuprumz",
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "blog"
   ],
+  "repository": "https://github.com/cuprumz/cuprumz.github.io.git",
   "scripts": {
     "develop": "gatsby develop --host=0.0.0.0",
     "start": "gatsby develop --host=0.0.0.0",
