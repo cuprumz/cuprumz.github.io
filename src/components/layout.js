@@ -15,24 +15,23 @@ const Layout = ({pageTitle, children}) => {
       }
     `)
     return (
-        <div className={layout.container}>
+        <div className="container mx-auto px-4">
             <title>{pageTitle} | {data.site.siteMetadata.title}</title>
-            <header className={layout.siteTitle}>{data.site.siteMetadata.title}</header>
+            <header className="text-4xl">{data.site.siteMetadata.title}</header>
             <nav>
                 <ul className={layout.navLinks}>
-                    <li className={layout.navLinkItem}>
-                        <Link to="/" className={layout.NavLinkText}>Home</Link>
+                    <li className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                        <Link to="/" className="text-xl">Home</Link>
                     </li>
-                    <li className={layout.navLinkItem}>
-                        <Link to="/blog" className={layout.NavLinkText}>Blog</Link>
+                    <li className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                        <Link to="/blog" className="text-xl">Blog</Link>
                     </li>
-                    <li className={layout.navLinkItem}>
-                        <Link to="/about" className={layout.NavLinkText}>About</Link>
+                    <li className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                        <Link to="/about" className="text-xl">About</Link>
                     </li>
                 </ul>
             </nav>
             <main>
-                <h1 className={layout.heading}>{pageTitle}</h1>
                 { children }
             </main>
         </div>

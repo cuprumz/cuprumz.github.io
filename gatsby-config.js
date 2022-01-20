@@ -4,6 +4,7 @@ module.exports = {
     title: "cuprumz's blog",
   },
   plugins: [
+    "gatsby-plugin-postcss",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     {
