@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-index-js",
     "path": "/",
-    "result": {"pageContext":{}},
+    "result": {"data":{"allMdx":{"nodes":[{"frontmatter":{"date":"July 25, 2021","title":"Yet Another Post"},"id":"e919cacb-6c99-5e77-b069-dbc3d7dbd8a8","slug":"yet-another-post","timeToRead":1,"wordCount":{"words":11}},{"frontmatter":{"date":"July 24, 2021","title":"Another Post"},"id":"97e47076-8633-5463-9a1a-46ec68a88761","slug":"another-post","timeToRead":1,"wordCount":{"words":10}},{"frontmatter":{"date":"July 24, 2021","title":"Another Post"},"id":"ba48b8d6-6b1b-5d11-ae22-65dc2f224496","slug":"another-post1","timeToRead":1,"wordCount":{"words":10}},{"frontmatter":{"date":"July 24, 2021","title":"Another Post"},"id":"d0abbde5-3681-578b-a742-39b630fd4ea6","slug":"another-post2","timeToRead":1,"wordCount":{"words":10}},{"frontmatter":{"date":"July 23, 2021","title":"My First Post"},"id":"da8a3114-fc03-5b02-8c42-913612a01194","slug":"my-first-post","timeToRead":1,"wordCount":{"words":21}}]}},"pageContext":{}},
     "staticQueryHashes": ["3764592887"]}
