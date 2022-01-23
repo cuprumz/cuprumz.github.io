@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import Layout from '../../components/layout'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import BlogRight from '../../components/blog-right';
 
 const BlogPost = ({ data }) => {
   const image = getImage(data.mdx.frontmatter.hero_image);
@@ -23,12 +24,18 @@ const BlogPost = ({ data }) => {
       <MDXRenderer>
         {data.mdx.body}
       </MDXRenderer>
+      <BlogRight url={`${data.site.siteMetadata.siteUrl}/post/${data.mdx.slug}`} />
     </Layout>
   );
 }
 
 export const query = graphql`
   query($id: String) {
+    site {
+      siteMetadata {
+        siteUrl
+      }
+    }
     mdx(id: {eq: $id}) {
       body
       frontmatter {
@@ -43,6 +50,7 @@ export const query = graphql`
           }
         }
       }
+      slug
     }
   }
 `

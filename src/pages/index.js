@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Layout from '../components/layout'
 import { graphql, Link } from 'gatsby'
+import BlogItem from '../components/blog-item';
 
 const IndexPage = (props) => {
   const {data} = props;
@@ -8,14 +9,7 @@ const IndexPage = (props) => {
     <Layout pageTitle="My Blog Posts">
       {
         data.allMdx.nodes.map(node => (
-          <article key={node.id}>
-            <h2>
-              <Link to={`/post/${node.slug}`}>
-                {node.frontmatter.title}
-              </Link>
-            </h2>
-            <p>Posted: {node.frontmatter.date}</p>
-          </article>
+          <BlogItem blog={node} key={node.id} />
         ))
       }
     </Layout>
@@ -32,6 +26,10 @@ export const query = graphql`
         }
         id
         slug
+        timeToRead
+        wordCount {
+          words
+        }
       }
     }
   }
